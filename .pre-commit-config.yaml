@@ -1,0 +1,27 @@
+---
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v5.0.0
+    hooks:
+      # Git style
+      - id: check-added-large-files
+      - id: check-merge-conflict
+      - id: check-vcs-permalinks
+      # Common errors
+      - id: end-of-file-fixer
+      - id: trailing-whitespace
+        args: [--markdown-linebreak-ext=md]
+      - id: check-yaml
+      - id: check-merge-conflict
+      - id: check-executables-have-shebangs
+      # Cross platform
+      - id: check-case-conflict
+      - id: mixed-line-ending
+        args: [--fix=lf]
+  - repo: https://github.com/jumanjihouse/pre-commit-hooks
+    rev: 3.0.0
+    hooks:
+      - id: shfmt
+        args: ["-l", "-i", "2", "-ci", "-sr", "-w"]
+      - id: shellcheck
+        args: ["--severity=warning"]
