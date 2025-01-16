@@ -5,21 +5,21 @@ LABEL base_image="ubi8/ubi"
 LABEL purpose="cloudutils"
 
 # renovate: datasource=github-releases depName=infracost/infracost
-ENV INFRACOST_VERSION="v0.10.40" 
+ENV INFRACOST_VERSION="v0.10.40"
 # renovate: datasource=github-releases depName=tmccombs/hcl2json
-ENV HCL2JSON_VERSION="v0.6.5"    
+ENV HCL2JSON_VERSION="v0.6.5"
 # renovate: datasource=github-releases depName=tfutils/tfenv
-ENV TFENV_VERSION="3.0.0"        
+ENV TFENV_VERSION="3.0.0"
 # renovate: datasource=github-releases depName=cloudskiff/driftctl
-ENV DRIFTCTL_VERSION="v0.40.0"   
+ENV DRIFTCTL_VERSION="v0.40.0"
 # renovate: datasource=github-releases depName=helm/helm
-ENV HELM_VERSION="v3.16.4"       
+ENV HELM_VERSION="v3.16.4"
 # renovate: datasource=github-releases depName=mikefarah/yq
-ENV YQ_VERSION="v4.44.6"         
+ENV YQ_VERSION="v4.44.6"
 # renovate: datasource=github-releases depName=jqlang/jq
-ENV JQ_VERSION="jq-1.7"          
+ENV JQ_VERSION="jq-1.7"
 # renovate: datasource=github-releases depName=oras-project/oras
-ENV ORAS_VERSION="v1.2.2"        
+ENV ORAS_VERSION="v1.2.2"
 
 # Add EPEL
 RUN cd /tmp && \
