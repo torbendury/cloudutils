@@ -30,5 +30,4 @@ jobs:
         with:
           context: .
           push: true
-          target: release
           tags: torbendury/cloudutils:${{ steps.pre-step.outputs.release_tag }},torbendury/cloudutils:latest
