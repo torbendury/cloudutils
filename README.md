@@ -58,3 +58,9 @@ And many more, like:
 - `checkov` for checking that your code is nearly bulletproof (or at least doesn't let the bad guy enter on the front door).
 - `azure-cli` for letting your container image grow gigabytes by some simple Python wrappers around Rest APIs.
 - `gcloud` for doing the exact same thing but with another set of APIs being wrapped.
+
+## License
+
+I choose [MIT License](LICENSE) because I wanted it simple and permissive.
+
+This repo - in respect, its CI - creates a container images which contains a truckload of software. If you think I did something wrong here regarding licensing, please [raise a GitHub Issue](https://github.com/torbendury/cloudutils/issues/new?template=Blank+issue).
