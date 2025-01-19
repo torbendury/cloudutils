@@ -1,3 +1,9 @@
+<div align="center">
+  <br>
+  <a href="https://www.flaticon.com/free-icons/container" title="container icons">Container icons created by smashingstocks - Flaticon</a>
+  <br>  
+</div>
+
 # torbendury/cloudutils
 
 The last CI image you will need for cloud stuff (except AWS, at least for now).
