@@ -1,0 +1,34 @@
+name: Release
+
+on:
+  push:
+    branches:
+      - main
+  schedule:
+    - cron: "0 1 * * *"
+
+jobs:
+  build_publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - id: pre-step
+        name: Docker Version Tag
+        shell: bash
+        run: echo "release_tag=$(git rev-parse --short HEAD)" >> $GITHUB_OUTPUT
+
+      - name: Login to DockerHub
+        uses: docker/login-action@v1
+        with:
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
+
+      - name: Build and push Docker image
+        uses: docker/build-push-action@v2
+        with:
+          context: .
+          push: true
+          target: release
+          tags: torbendury/cloudutils:${{ steps.pre-step.outputs.release_tag }},torbendury/cloudutils:latest
