@@ -1,8 +1,9 @@
 <div align="center">
   <br>
-  <a href="https://www.flaticon.com/free-icons/container" title="container icons">Container icons created by smashingstocks - Flaticon</a>
-  <br>  
+  <img src="assets/container.png" alt="cloudutils" width="200"/>
+  <br>
 </div>
+
 
 # torbendury/cloudutils
 
@@ -70,3 +71,7 @@ And many more, like:
 I choose [MIT License](LICENSE) because I wanted it simple and permissive.
 
 This repo - in respect, its CI - creates a container images which contains a truckload of software. If you think I did something wrong here regarding licensing, please [raise a GitHub Issue](https://github.com/torbendury/cloudutils/issues/new?template=Blank+issue).
+
+## Attributions
+
+- [Container icon created by smashingstocks - Flaticon](https://www.flaticon.com/free-icons/container)
