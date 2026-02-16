@@ -5,19 +5,19 @@ LABEL base_image="ubi8/ubi"
 LABEL purpose="cloudutils"
 
 #depName=infracost/infracost
-ENV INFRACOST_VERSION="v0.10.40"
+ENV INFRACOST_VERSION="v0.10.43"
 #depName=tmccombs/hcl2json
-ENV HCL2JSON_VERSION="v0.6.5"
+ENV HCL2JSON_VERSION="v0.6.8"
 #depName=tfutils/tfenv
 ENV TFENV_VERSION="3.0.0"
 #depName=helm/helm
-ENV HELM_VERSION="v3.17.0"
+ENV HELM_VERSION="v4.1.1"
 #depName=mikefarah/yq
-ENV YQ_VERSION="v4.45.1"
+ENV YQ_VERSION="v4.52.4"
 #depName=jqlang/jq
-ENV JQ_VERSION="jq-1.7.1"
+ENV JQ_VERSION="jq-1.8.1"
 #depName=oras-project/oras
-ENV ORAS_VERSION="v1.2.2"
+ENV ORAS_VERSION="v1.3.0"
 
 # Add EPEL
 RUN cd /tmp && \
