@@ -98,7 +98,8 @@ RUN mkdir -m 777 -p /.tfenv && curl -sLo /tmp/tfenv.tar.gz https://github.com/tf
     tar -xf /tmp/tfenv.tar.gz -C /.tfenv && rm /tmp/tfenv.tar.gz && mv /.tfenv/tfenv-${TFENV_VERSION}/* /.tfenv && ln -s /.tfenv/bin/* /usr/local/bin
 
 # Install Helm Extensions
-RUN helm plugin install https://github.com/databus23/helm-diff
+# helm-diff plugin does not (yet?) support signature verification
+RUN helm plugin install --verify=false https://github.com/databus23/helm-diff
 
 # Prepare User
 RUN groupadd -g 1000 -r ci && \
